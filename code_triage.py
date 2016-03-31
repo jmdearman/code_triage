@@ -1,14 +1,16 @@
 #!/usr/bin/env python2
-
+from __future__ import division, print_function
 import collections
 import os
 import numpy as np
 import h5py
 
-intro_text = """
-CODE TRIAGE
------------
+header_text = """
+INTRO TO ANTIPATTERNS IN SCIENTIFIC COMPUTING PART I: CODE TRIAGE
+-----------------------------------------------------------------
+"""
 
+intro_text = """
 You are an engineer at NASA.
 
 You've told all of your colleagues how awesome Python is, and you managed to
@@ -98,6 +100,8 @@ def start():
     """Show intro messages."""
     configure()
     clear()
+    print(header_text, end='')
+    raw_input()
     print(intro_text)
     raw_input('Press any key to check your email...')
     clear()
