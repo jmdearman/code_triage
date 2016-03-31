@@ -1,0 +1,12 @@
+# Compiled files
+*.py[cod]
+__pycache__
+
+# Generated files
+*.h5
+
+# Other
+*~
+
+# Mac OSX
+.DS_Store
