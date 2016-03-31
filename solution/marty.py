@@ -24,16 +24,16 @@ with quantity_support():
     ax.plot(data['miss_x'], data['miss_y'], '.', 
             xunits=xunits, yunits=yunits, label='simulation data')
 
-x, y = ellipse(8*imp.mile, 6*imp.mile, npoints)
-ax.plot(x, y, label='accuracy requirement')
+    x, y = ellipse(8*imp.mile, 6*imp.mile, npoints)
+    ax.plot(x, y, label='accuracy requirement')
 
-x, y = ellipse(20*imp.mile, 7*imp.mile, npoints)
-ax.plot(x, y, label='keepout zone')
+    x, y = ellipse(20*imp.mile, 7*imp.mile, npoints)
+    ax.plot(x, y, label='keepout zone')
 
-ax.set_xlabel('X Miss Distance ({})'.format(ax.xaxis.units))
-ax.set_ylabel('Y Miss Distance ({})'.format(ax.yaxis.units))
-ax.grid(True)
-ax.axis('equal')
-ax.legend()
+    ax.set_xlabel('X Miss Distance ({})'.format(ax.xaxis.units))
+    ax.set_ylabel('Y Miss Distance ({})'.format(ax.yaxis.units))
+    ax.grid(True)
+    ax.axis('equal')
+    ax.legend()
 
-plt.show()
+    plt.show()

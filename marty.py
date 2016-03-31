@@ -6,11 +6,11 @@ MILES_TO_FEET = 5280
 METERS_TO_FEET = 1/.3049
 
 # Simulation Data
-nominal = h5py.File('touchdown_data.h5')
-assert nominal['miss_x'].attrs['unit'] == 'm'  # ensure data is in meters
-x = nominal['miss_x'][:] * METERS_TO_FEET
-assert nominal['miss_y'].attrs['unit'] == 'm'
-y = nominal['miss_y'][:] * METERS_TO_FEET
+data = h5py.File('touchdown_data.h5')
+assert data['miss_x'].attrs['unit'] == 'm'  # ensure data is in meters
+x = data['miss_x'][:] * METERS_TO_FEET
+assert data['miss_y'].attrs['unit'] == 'm'
+y = data['miss_y'][:] * METERS_TO_FEET
 plt.plot(x, y, '.', label='simulation data')
 
 # Accuracy Ellipse

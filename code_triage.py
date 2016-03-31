@@ -104,7 +104,7 @@ def start():
     print(header_text, end='')
     raw_input()
     print(intro_text)
-    raw_input('Press any key to check your email...')
+    raw_input('Press return to check your email...')
     clear()
     print(message_text)
 
