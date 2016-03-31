@@ -56,6 +56,7 @@ CODE TRIAGE WRAP-UP
 - define functions or use iteration to avoid repetition (DRY)
 - vectorize computational for-loops with numpy
 - use adapter classes to improve workflow
+- sign up for INTRO TO ANTIPATTERNS IN SCIENTIFIC COMPUTING PART II
 
 LINKS
 -----
