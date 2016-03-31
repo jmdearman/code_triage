@@ -53,7 +53,6 @@ CODE TRIAGE WRAP-UP
 - use astropy.units instead of rolling your own conversions
 - define functions or use iteration to avoid repetition (DRY)
 - vectorize computational for-loops with numpy
-- use the matplotlib OO interface for business code
 - use adapter classes to improve workflow
 
 LINKS
