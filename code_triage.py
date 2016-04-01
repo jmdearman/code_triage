@@ -8,9 +8,18 @@ import h5py
 header_text = """
 INTRO TO ANTIPATTERNS IN SCIENTIFIC COMPUTING PART I: CODE TRIAGE
 -----------------------------------------------------------------
+
+Instructions to follow along:
+
+>>> git clone https://github.com/jmdearman/code_triage
+>>> cd code_triage
+>>> ./code_triage start
 """
 
 intro_text = """
+SCENARIO
+--------
+
 You are an engineer at NASA.
 
 You've told all of your colleagues how awesome Python is, and you managed to
@@ -103,6 +112,7 @@ def start():
     clear()
     print(header_text, end='')
     raw_input()
+    clear()
     print(intro_text)
     raw_input('Press return to check your email...')
     clear()
