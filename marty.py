@@ -19,7 +19,7 @@ b = 6/2*MILES_TO_FEET
 x = np.zeros(1000)
 y = np.zeros(1000)
 for ii in range(0, 1000):
-    t = ii/(2*np.pi)
+    t = ii*(2*np.pi)/1000
     x[ii] = a*np.cos(t)
     y[ii] = b*np.sin(t)
 plt.plot(x, y, label='accuracy requirement')
@@ -30,7 +30,7 @@ b = 7/2*MILES_TO_FEET
 x = np.zeros(1000)
 y = np.zeros(1000)
 for ii in range(0, 1000):
-    t = ii/(2*np.pi)
+    t = ii*(2*np.pi)/1000
     x[ii] = a*np.cos(t)
     y[ii] = b*np.sin(t)
 plt.plot(x, y, label='keepout zone')
